@@ -1,8 +1,0 @@
-package com.musala.lfm.strings;
-
-public class StringsExercise {
-
-	public static void main(String[] args) {
-		
-	}
-}

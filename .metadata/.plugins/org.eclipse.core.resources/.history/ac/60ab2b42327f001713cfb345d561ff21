@@ -1,8 +1,0 @@
-package com.musala.lfm.strings;
-
-public class TooManyStrings {
-
-	public static void main(String[] args) {
-		
-	}
-}

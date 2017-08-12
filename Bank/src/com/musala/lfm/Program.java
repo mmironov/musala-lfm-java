@@ -24,6 +24,7 @@ public class Program {
 		
 		sa.withdraw(24.5);
 		sa.withdraw(1000000.5);
+		sa.withdraw(11);
 		
 		System.out.println(sa);
 		

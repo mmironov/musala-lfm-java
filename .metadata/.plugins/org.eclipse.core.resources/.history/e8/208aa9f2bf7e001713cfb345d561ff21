@@ -1,7 +1,0 @@
-package com.musala.lfm;
-
-public class Student {
-
-	String firstName;
-	String lastName;
-}
