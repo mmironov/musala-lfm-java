@@ -31,8 +31,8 @@ public class Program {
 		newAccount.deposit(1000);
 		
 		newAccount.payInterest();
-		newAccount.payInterest();
+		newAccount.payInterest(); //has no effect
 		
-		newAccount.getBalance();
+		System.out.println(newAccount);
 	}
 }

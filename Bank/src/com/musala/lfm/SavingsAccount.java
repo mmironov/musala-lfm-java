@@ -5,9 +5,12 @@ public class SavingsAccount extends Account {
 	
 	private double interestRate;
 	
+	private boolean isInterestPaid;
+	
 	public SavingsAccount(String name, double interestRate) {
 		super(name);
 		this.interestRate = 0.1;
+		this.isInterestPaid = false;
 		if (interestRate >= 0) {
 			this.interestRate = interestRate;
 		}
@@ -21,6 +24,15 @@ public class SavingsAccount extends Account {
 			if (newBalance >= 0) {
 				super.withdraw(amount);
 			}
+		}
+	}
+	
+	public void payInterest() {
+		
+		if (!isInterestPaid) {
+			double interest = (getBalance() * interestRate) / 100;
+			deposit(interest);
+			isInterestPaid = true;
 		}
 	}
 }
