@@ -1,0 +1,9 @@
+package com.musala.internal;
+
+public class MusalaProgram {
+
+	public static void main(String[] args) {
+		
+		Student student = new Student();
+	}
+}
