@@ -1,0 +1,18 @@
+package com.musala.lfm;
+
+public class Account {
+
+	private String name;
+	private double balance;
+	private boolean isOpen;
+	
+	public Account() {
+		this("");
+	}
+	
+	public Account(String name) {
+		this.name = name;
+		balance = 0;
+		isOpen = false;
+	}
+}

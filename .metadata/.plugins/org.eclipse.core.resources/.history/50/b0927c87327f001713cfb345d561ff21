@@ -1,0 +1,15 @@
+package com.musala.lfm.strings;
+
+public class TooManyStrings {
+
+	public static void main(String[] args) {
+		
+		String lotsOfA = "";
+		
+		for(int i=0; i < 1000; ++i) {
+			lotsOfA += 'a';
+		}
+		
+		System.out.println(lotsOfA);
+	}
+}

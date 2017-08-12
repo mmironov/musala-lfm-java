@@ -1,0 +1,7 @@
+package com.musala.lfm;
+
+import com.musala.lfm.Account;
+
+public class SavingsAccount extends Account {
+	
+}

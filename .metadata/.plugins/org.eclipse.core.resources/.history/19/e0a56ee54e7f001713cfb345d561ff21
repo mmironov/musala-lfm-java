@@ -1,0 +1,10 @@
+package com.musala.lfm;
+
+public class Account {
+
+	private String name;
+	private double balance;
+	private boolean isOpen;
+	
+	
+}

@@ -1,0 +1,6 @@
+package com.musala.lfm;
+
+public class Account {
+
+	private String name;
+}

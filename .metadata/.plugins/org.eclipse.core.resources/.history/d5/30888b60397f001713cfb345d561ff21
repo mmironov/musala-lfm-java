@@ -1,0 +1,30 @@
+package com.musala.lfm.strings;
+
+public class TooManyStrings {
+
+	public static void main(String[] args) {
+		
+//		String lotsOfA = "";
+//		
+//		for(int i=0; i < 1000000; ++i) {
+//			lotsOfA += 'a';
+//		}
+//		
+//		System.out.println("end");
+		
+		StringBuilder builder = new StringBuilder();
+		
+		for(int i=0; i < 1000000; ++i) {
+			builder.append(" aaaa ");
+		}
+		
+		String string = builder.toString();
+		System.out.println(string);
+	}
+	
+	static String[] getWords(String text) {
+		
+		return text.split(" ");
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.musala.lfm;
+
+
+public class SavingsAccount extends Account {
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+}
