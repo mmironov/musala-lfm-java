@@ -7,8 +7,6 @@ public abstract class Account {
 	private boolean isOpen;
 	private String iban;
 	
-	private AccountOpener opener;
-	
 	public String getIban() {
 		return iban;
 	}
@@ -16,8 +14,8 @@ public abstract class Account {
 	public void setIban(String iban) {
 		this.iban = iban;
 	}
-
-	public abstract void initialize();
+	
+	public abstract AccountOpener getOpener();
 	
 	public Account() {
 		this("");
@@ -33,7 +31,11 @@ public abstract class Account {
 		this.balance = balance;
 		this.isOpen = isOpen;
 		
-		opener.open(this);
+		AccountOpener opener = getOpener();
+		
+		if (opener != null) {
+			opener.open(this);			
+		}
 	}
 	
 	public void setName(String name) {

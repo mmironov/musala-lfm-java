@@ -27,7 +27,7 @@ public class CreditCardAccount extends Account {
 	}
 	
 	@Override
-	public void initialize() {
-		
+	public AccountOpener getOpener() {
+		return new GenerousAccountOpener();
 	}
 }
