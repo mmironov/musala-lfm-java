@@ -35,4 +35,9 @@ public class SavingsAccount extends Account {
 			isInterestPaid = true;
 		}
 	}
+	
+	@Override
+	public void initialize() {
+		
+	}
 }

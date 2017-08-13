@@ -25,4 +25,9 @@ public class CreditCardAccount extends Account {
 			}
 		}
 	}
+	
+	@Override
+	public void initialize() {
+		
+	}
 }

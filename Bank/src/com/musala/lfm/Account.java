@@ -1,10 +1,23 @@
 package com.musala.lfm;
 
-public class Account {
+public abstract class Account {
 
 	private String name;
 	private double balance;
 	private boolean isOpen;
+	private String iban;
+	
+	private AccountOpener opener;
+	
+	public String getIban() {
+		return iban;
+	}
+
+	public void setIban(String iban) {
+		this.iban = iban;
+	}
+
+	public abstract void initialize();
 	
 	public Account() {
 		this("");
@@ -19,6 +32,8 @@ public class Account {
 		setName(name);
 		this.balance = balance;
 		this.isOpen = isOpen;
+		
+		opener.open(this);
 	}
 	
 	public void setName(String name) {
