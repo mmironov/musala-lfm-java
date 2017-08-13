@@ -32,11 +32,14 @@ public class Notepad implements Searchable {
 		StringBuilder builder = new StringBuilder();
 		
 		for(int i=0; i < pages.length; ++i) {
-			builder.append("(");
-			builder.append(i + 1);
-			builder.append(")\n");
-			builder.append(pages[i].toString());
-			builder.append("\n\n");
+			
+			if (!pages[i].isEmpty()) {				
+				builder.append("(");
+				builder.append(i + 1);
+				builder.append(")\n");
+				builder.append(pages[i].toString());
+				builder.append("\n\n");
+			}
 		}
 		
 		return builder.toString();
@@ -47,6 +50,8 @@ public class Notepad implements Searchable {
 		if (pageNumber >= 1 && pageNumber <= pages.length) {
 			String newContent = pages[pageNumber - 1].getContent() + text;
 			pages[pageNumber - 1].setContent(newContent);
+			
+			System.out.println("Added new text");
 		}
 	}
 }
