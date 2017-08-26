@@ -1,0 +1,13 @@
+package com.musala.lfm;
+
+import javax.swing.JFrame;
+
+public class RegisterApp {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Sign Up");
+		
+		JPanel mainPanel = new JPanel();
+	}
+}

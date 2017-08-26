@@ -1,0 +1,24 @@
+package com.musala.lfm;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class RegisterApp {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Sign Up");
+		frame.setSize(300, 700);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		
+		JPanel mainPanel = new JPanel();
+		
+		JLabel lblUsername = new JLabel("Username");
+		mainPanel.add(lblUsername);
+		
+		frame.add(mainPanel);
+		frame.setVisible(true);
+	}
+}
