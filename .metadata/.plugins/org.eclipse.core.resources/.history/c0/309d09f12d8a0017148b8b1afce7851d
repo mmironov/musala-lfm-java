@@ -1,0 +1,17 @@
+package com.musala.lfm.collections;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class ExceptionsExamples {
+
+	public static void main(String[] args) {
+		
+		copy("file.txt");
+	}
+	
+	private static void copy(String sourceFilename) throws FileNotFoundException {
+		
+		FileInputStream in = new FileInputStream(sourceFilename);
+	}
+}

@@ -1,0 +1,8 @@
+package com.musala.lfm.collections;
+
+public class ExceptionsExamples {
+
+	public static void main(String[] args) {
+		
+	}
+}

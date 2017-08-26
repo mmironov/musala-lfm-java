@@ -1,0 +1,23 @@
+package com.musala.lfm;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Icon icon = null;
+		try {
+			icon = new ImageIcon(new URL("https://docs.gimp.org/en/images/filters/examples/color-taj-sample-colorize.jpg"), "India");
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+		
+		JOptionPane.showMessageDialog(null, "Hello world!", "Info",JOptionPane.WARNING_MESSAGE, icon);
+	}
+}

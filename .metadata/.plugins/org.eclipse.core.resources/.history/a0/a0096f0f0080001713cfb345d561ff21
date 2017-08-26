@@ -1,0 +1,93 @@
+package com.musala.lfm;
+
+public abstract class Account {
+
+	private String name;
+	private double balance;
+	private boolean isOpen;
+	private String iban;
+	
+	public String getIban() {
+		return iban;
+	}
+
+	public void setIban(String iban) {
+		this.iban = iban;
+	}
+	
+	public abstract AccountOpener getOpener();
+	
+	public Account() {
+		this("");
+	}
+	
+	public Account(String name) {
+		this(name, 0, true);
+	}
+	
+	public Account(String name, double balance, boolean isOpen) {
+		this.name = "";
+		setName(name);
+		this.balance = balance;
+		this.isOpen = isOpen;
+		
+//		AccountOpener opener = getOpener();
+//		
+//		if (opener != null) {
+//			opener.open(this);			
+//		}
+		
+		if (this instanceof SavingsAccount) {
+			new SimpleAccountOpener().open(this);
+		}
+	}
+	
+	public void setName(String name) {
+		
+		if (name != null) {			
+			this.name = name;
+		}
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public double getBalance() {
+		return balance;
+	}
+	
+	public boolean isOpen() {
+		return isOpen;
+	}
+	
+	public void withdraw(double amount) {
+		
+		if (amount > 0 && isOpen()) {
+			balance -= amount;
+		}
+	}
+	
+	public void deposit(double amount) {
+		
+		if (amount > 0 && isOpen()) {
+			balance += amount;
+		}
+	}
+	
+	public void open() {
+		isOpen = true;
+	}
+	
+	public void lock() {
+		isOpen = false;
+	}
+	
+	@Override
+	public String toString() {
+		
+		String status = isOpen ? "open" : "locked";
+		
+		return name + " (" + balance + "): " + status;
+	}
+}

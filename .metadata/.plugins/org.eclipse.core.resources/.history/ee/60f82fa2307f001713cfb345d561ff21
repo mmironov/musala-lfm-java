@@ -1,0 +1,15 @@
+package com.musala.lfm.strings;
+
+public class StringsExercise {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	static void printStrings() {
+		
+		String[] strings = {"baba", "aa", "ei", "yo"};
+		
+		
+	}
+}

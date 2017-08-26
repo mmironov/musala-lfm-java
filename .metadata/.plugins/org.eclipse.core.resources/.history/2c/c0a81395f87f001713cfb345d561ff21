@@ -1,0 +1,4 @@
+package com.musala.lfm;
+
+public class GenerousAccountOpener implements AccountOpener {
+}

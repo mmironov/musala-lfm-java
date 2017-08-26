@@ -1,0 +1,5 @@
+package com.musala.lfm.collections;
+
+public class LfmException extends Exception {
+
+}

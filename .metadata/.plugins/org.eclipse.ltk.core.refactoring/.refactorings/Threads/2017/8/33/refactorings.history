@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;thread&apos; in &apos;com.musala.lfm.TwoThreads.main(...)&apos; to &apos;backgroundThread&apos;&#x0A;- Original project: &apos;Threads&apos;&#x0A;- Original element: &apos;com.musala.lfm.TwoThreads.main(String[]).thread&apos;&#x0A;- Renamed element: &apos;thread&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;thread&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.musala.lfm{TwoThreads.java[TwoThreads~main~\[QString;@thread!158!206!165!170!QThread;!0!false" name="backgroundThread" references="true" stamp="1502630545204" version="1.0"/>
+</session>

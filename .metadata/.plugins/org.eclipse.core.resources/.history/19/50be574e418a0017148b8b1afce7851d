@@ -1,0 +1,21 @@
+package com.musala.lfm;
+
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class LfmPanel extends JPanel {
+	
+	int x = 320;
+	int y = 220;
+	
+	@Override
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+		g.drawLine(10,  10, x, y);
+		g.drawString(Thread.currentThread().getName(), x, y);
+		x += 1;
+		y += 1;
+	}
+}

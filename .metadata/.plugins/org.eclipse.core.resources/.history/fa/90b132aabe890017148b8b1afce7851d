@@ -1,0 +1,29 @@
+package com.musala.lfm.collections;
+
+import java.io.File;
+
+
+public class FilesAndExceptions {
+
+	public static void main(String args[]) {
+		
+		File file = new File("hello.txt");
+		
+		if (file.exists()) {
+			System.out.println(file);
+			
+			System.out.println(file.getAbsolutePath());
+			
+			File[] files = file.listFiles();
+			for(int i=0; i < files.length; ++i) {
+				System.out.println(files[i]);
+			}
+		}
+		
+	}
+	
+	private static void copyFile(String sourceFilename, String destFilename) {
+		
+//		FileInputStream in = new Filei
+	}
+}

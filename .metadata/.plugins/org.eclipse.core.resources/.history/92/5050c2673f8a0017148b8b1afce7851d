@@ -1,0 +1,32 @@
+package com.musala.lfm;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PanelsAndFrames {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Window");
+		
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
+		frame.setSize(700, 500);
+		frame.setLocationRelativeTo(null);
+		
+//		frame.setAlwaysOnTop(true);
+		
+		JPanel panel = new LfmPanel();
+		frame.add(panel);
+		
+		frame.setVisible(true);
+		for(int i=0; i < 100; ++i) {			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.print(i + " ");
+		}
+	}
+}

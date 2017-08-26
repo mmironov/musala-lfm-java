@@ -1,0 +1,20 @@
+package com.musala.lfm;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Notepad notepad = new SecureNotepad(3);
+		
+		notepad.addTextTo("Hello World", 1);
+		
+		System.out.println(notepad);
+		
+		long start = System.currentTimeMillis();
+		//some code
+		//
+		//
+		long end = System.currentTimeMillis();
+		
+	}
+}

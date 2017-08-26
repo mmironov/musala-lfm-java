@@ -1,0 +1,15 @@
+package com.musala.lfm.collections;
+
+import java.io.FileInputStream;
+
+
+public class FilesAndExceptions {
+
+	public static void main(String args[]) {
+	}
+	
+	private static void copyFile(String sourceFilename, String destFilename) {
+		
+//		FileInputStream in = new Filei
+	}
+}

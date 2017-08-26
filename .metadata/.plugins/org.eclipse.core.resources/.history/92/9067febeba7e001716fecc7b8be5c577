@@ -1,0 +1,16 @@
+package com.musala.lfm;
+
+public class StringsExample {
+
+	public static void main(String[] args) {
+		
+		String hello = "hello";
+		String world = "world";
+		
+		String helloWorld = hello + ", " + world;
+		
+		helloWorld += "!";
+		
+		System.out.println(helloWorld);
+	}
+}

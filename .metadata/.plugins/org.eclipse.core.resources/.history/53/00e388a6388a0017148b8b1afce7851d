@@ -1,0 +1,13 @@
+package com.musala.lfm;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		JOptionPane.showMessageDialog(null, "Hello world!", "Info",JOptionPane.WARNING_MESSAGE, icon);
+	}
+}

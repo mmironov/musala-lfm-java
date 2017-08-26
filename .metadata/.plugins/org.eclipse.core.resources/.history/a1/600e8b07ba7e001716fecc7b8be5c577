@@ -1,0 +1,9 @@
+package com.musala.lfm;
+
+public class StringsExample {
+
+	public static void main(String[] args) {
+		
+		String h = "hello";
+	}
+}

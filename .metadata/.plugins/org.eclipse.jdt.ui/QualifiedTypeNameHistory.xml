@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.musala.lfm.Student"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.musala.lfm.AccountOpener"/>
+<fullyQualifiedTypeName name="com.musala.lfm.SavingsAccount"/>
+<fullyQualifiedTypeName name="com.musala.lfm.SimpleAccountOpener"/>
+<fullyQualifiedTypeName name="com.musala.lfm.CreditCardAccount"/>
+<fullyQualifiedTypeName name="com.musala.lfm.GenerousAccountOpener"/>
+<fullyQualifiedTypeName name="com.musala.lfm.Searchable"/>
+<fullyQualifiedTypeName name="com.musala.lfm.Page"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.musala.lfm.Notepad"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+</qualifiedTypeNameHistroy>

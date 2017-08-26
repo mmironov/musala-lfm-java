@@ -1,0 +1,43 @@
+package com.musala.lfm;
+
+public class Notepad implements Searchable {
+
+	private Page[] pages;
+	
+	public Notepad(int numberOfPages) {
+		
+		pages = new Page[numberOfPages];
+	}
+	
+	@Override
+	public int searchText(String text) {
+		
+		for(int i=0; i < pages.length; ++i) {
+			Page page = pages[i];
+			
+			if (page.getContent().toLowerCase().contains(text.toLowerCase().trim())) {
+				return i;
+			}
+		}
+		
+		return -1;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		
+		for(int i=0; i < pages.length; ++i) {
+			builder.append("(");
+			builder.append(i + 1);
+			builder.append(")");
+			
+		}
+		
+		return builder.toString();
+	}
+	
+	public void addTextTo(String text, int pageNumber) {
+		
+	}
+}

@@ -1,0 +1,15 @@
+package com.musala.lfm;
+
+import javax.swing.JFrame;
+
+public class PanelsAndFrames {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Window");
+		
+		frame.setSize(300, 200);
+		
+		frame.setVisible(true);
+	}
+}

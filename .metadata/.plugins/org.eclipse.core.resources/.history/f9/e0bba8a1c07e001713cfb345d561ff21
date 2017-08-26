@@ -1,0 +1,21 @@
+package com.musala.lfm;
+
+public class Student {
+
+	private String firstName;
+	private String lastName;
+	private int age;
+	private double score;
+	
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	
+	private boolean isUnderAge() {
+		return age < 18;
+	}
+}

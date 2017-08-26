@@ -1,0 +1,24 @@
+package com.musala.lfm;
+
+public class CreditCardAccount extends Account {
+
+	private double limit;
+	
+	public CreditCardAccount(String name, double limit) {
+		super(name);
+		
+		this.limit = limit >= 0 ? limit : 0;
+	}
+	
+	public double getLimit() {
+		return limit;
+	}
+	
+	@Override
+	public void withdraw(double amount) {
+		
+		if (amount > 0 && isOpen()) {
+			double newBalance = getBalance() - amount;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+package com.musala.lfm;
+
+public class Page {
+
+	private String title;
+	private String content;
+	
+	public Page() {
+		title = "";
+		content = "";
+	}
+	
+	public Page(String title, String content) {
+		
+		title = tittle != null ? title : "";
+		
+		this.title = title;
+		this.content = content;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		
+		if (title != null) {
+			this.title = title;			
+		}
+	}
+	
+	public String getContent() {
+		return content;
+	}
+	
+	public void setContent(String content) {
+		
+		if (content != null) {			
+			this.content = content;
+		}
+	}
+	
+	boolean isEmpty() {
+		return title.equals("") && content.equals("");
+	}
+}

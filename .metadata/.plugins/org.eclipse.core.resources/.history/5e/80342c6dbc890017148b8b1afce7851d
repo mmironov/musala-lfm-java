@@ -1,0 +1,13 @@
+package com.musala.lfm.collections;
+
+
+public class FilesAndExceptions {
+
+	public static void main(String args[]) {
+	}
+	
+	private static void copyFile(String sourceFilename, String destFilename) {
+		
+		
+	}
+}

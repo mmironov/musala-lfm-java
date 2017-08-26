@@ -1,0 +1,9 @@
+package com.musala.lfm;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Notepad notepad = new Notepad(3);
+	}
+}

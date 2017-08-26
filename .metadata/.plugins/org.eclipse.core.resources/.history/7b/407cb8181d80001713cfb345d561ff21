@@ -1,0 +1,53 @@
+package com.musala.lfm;
+
+import java.util.Scanner;
+
+public class SecureNotepad extends Notepad {
+
+	private Scanner scanner = new Scanner(System.in);
+	private String password;
+	
+	public SecureNotepad(int numberOfPages) {
+		super(numberOfPages);
+		
+		assignNewPassword();
+	}
+	
+	private void assignNewPassword() {
+		System.out.println("Enter password: ");
+		String password = scanner.nextLine();
+		
+		if (!isPasswordValid(password)) {
+			System.out.println("Password not valid!");
+			assignNewPassword();
+		} else {
+			System.out.println("Confirm password: ");
+			String confirmed = scanner.nextLine();
+			
+			if (password.equals(confirmed)) {
+				this.password = password;
+			} else {
+				System.out.println("Passwords do not match");
+				assignNewPassword();
+			}
+		}
+	}
+	
+	private boolean isPasswordValid(String password) {
+		return password != null && password.length() > 3;
+	}
+	
+	private String requestPassword() {
+		String password = scanner.nextLine();
+	}
+	
+	@Override
+	public void addTextTo(String text, int pageNumber) {
+		
+		String password = requestPassword();
+		
+		if (this.password.equals(password)) {
+			super.addTextTo(text, pageNumber);			
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package com.musala.lfm;
+
+public class Student {
+
+	String firstName;
+	String lastName;
+	int age;
+	double score;
+	
+	void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+}

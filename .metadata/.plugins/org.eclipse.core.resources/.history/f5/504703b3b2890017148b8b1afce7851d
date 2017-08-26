@@ -1,0 +1,8 @@
+package com.musala.lfm.collections;
+
+public class MapExample {
+	
+	public static void main(String[] args) {
+	
+	}
+}

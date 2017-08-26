@@ -1,0 +1,10 @@
+package com.musala.lfm.collections;
+
+public class Box<T> {
+	
+	private T value;
+	
+	public Box(T value) {
+		this.value = value;
+	}
+}

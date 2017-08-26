@@ -1,0 +1,9 @@
+package com.musala.lfm;
+
+public class TwoThreads {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}
