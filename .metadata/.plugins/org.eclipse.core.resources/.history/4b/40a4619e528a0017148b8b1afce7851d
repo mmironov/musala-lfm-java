@@ -1,0 +1,10 @@
+package com.musala.lfm;
+
+public class Car {
+
+	private String color;
+	
+	public class Door {
+		
+	}
+}

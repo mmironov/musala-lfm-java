@@ -1,0 +1,18 @@
+package com.musala.lfm;
+
+static public class Rectangle {
+
+	private Point topLeft;
+	private int width;
+	private int height;
+	
+	@Override
+	public String toString() {
+		return topLeft.x + ", " + topLeft.y;
+	}
+	
+	public static class Point {
+		public int x;
+		public int y;
+	}
+}

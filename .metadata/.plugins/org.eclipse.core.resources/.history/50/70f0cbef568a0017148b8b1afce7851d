@@ -1,0 +1,7 @@
+package com.musala.lfm;
+
+@FunctionalInterface
+public interface Function {
+
+	int eval(int x);
+}

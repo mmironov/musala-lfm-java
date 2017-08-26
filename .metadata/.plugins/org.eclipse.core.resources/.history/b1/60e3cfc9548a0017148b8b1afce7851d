@@ -1,0 +1,9 @@
+package com.musala.lfm;
+
+public class SortRectangles {
+
+	public static void main(String[] args) {
+		
+		Rectangle r1 = new Rectangle();
+	}
+}
