@@ -57,6 +57,7 @@ public class PanelsAndFrames {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				textField.setText("");
+				System.out.println("Button click!!");
 			}
 		});
 		
