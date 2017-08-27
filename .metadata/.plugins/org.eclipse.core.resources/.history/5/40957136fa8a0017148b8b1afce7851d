@@ -1,18 +1,13 @@
 package com.musala.lfm;
 
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Arrays;
 
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -52,30 +47,8 @@ public class RegisterApp {
 		JPasswordField txtConfirmPassword = new JPasswordField(20);
 		mainPanel.add(txtConfirmPassword);
 		
-		JLabel lblPasswordsMatchingInfo = new JLabel("Passwords do not match");
-		mainPanel.add(lblPasswordsMatchingInfo);
-		lblPasswordsMatchingInfo.setVisible(false);
-		lblPasswordsMatchingInfo.setForeground(COLOR_RED);
-		
 		final JButton signUpButton = new JButton("Sign Up");
 		signUpButton.setEnabled(false);
-		
-		signUpButton.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				
-				String[] options = {"Йей!"};
-				
-				String message = "Честито, " + txtUsername.getText() + "!";
-				String title = "Евала!";
-				Icon icon = new ImageIcon("ic_smile.png");
-				int option = JOptionPane.showOptionDialog(mainPanel, message, title, JOptionPane.OK_OPTION, JOptionPane.INFORMATION_MESSAGE, icon, options, options[0]);
-				
-				frame.dispose();
-			}
-		});
-		
 		mainPanel.add(signUpButton);
 		
 		txtUsername.addKeyListener(new KeyAdapter() {
@@ -145,16 +118,10 @@ public class RegisterApp {
 						txtPassword.getPassword(), txtConfirmPassword.getPassword());
 				signUpButton.setEnabled(isFormValid);
 				
-				if (txtConfirmPassword.getPassword() == null || 
-						txtConfirmPassword.getPassword().length == 0) {
-					txtConfirmPassword.setBackground(Color.WHITE);
+				if (txtPassword.getPassword() == null || 
+						txtPassword.getPassword().length == 0) {
+					txtPassword.setBackground(Color.WHITE);
 					return;
-				}
-				
-				if (getPasswordType(txtPassword.getPassword()) != PasswordType.INVALID) {
-					boolean matching = arePasswordsMatching(txtPassword.getPassword(), 
-							txtConfirmPassword.getPassword());
-					lblPasswordsMatchingInfo.setVisible(!matching);
 				}
 			}
 		});

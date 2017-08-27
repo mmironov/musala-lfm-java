@@ -7,8 +7,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Arrays;
 
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,6 +14,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
+import org.omg.PortableInterceptor.INACTIVE;
 
 public class RegisterApp {
 
@@ -68,11 +68,7 @@ public class RegisterApp {
 				String[] options = {"Йей!"};
 				
 				String message = "Честито, " + txtUsername.getText() + "!";
-				String title = "Евала!";
-				Icon icon = new ImageIcon("ic_smile.png");
-				int option = JOptionPane.showOptionDialog(mainPanel, message, title, JOptionPane.OK_OPTION, JOptionPane.INFORMATION_MESSAGE, icon, options, options[0]);
-				
-				frame.dispose();
+				JOptionPane.showMessageDialog(mainPanel, message);
 			}
 		});
 		

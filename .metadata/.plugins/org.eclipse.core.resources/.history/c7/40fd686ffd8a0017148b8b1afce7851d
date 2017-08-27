@@ -72,7 +72,7 @@ public class RegisterApp {
 				Icon icon = new ImageIcon("ic_smile.png");
 				int option = JOptionPane.showOptionDialog(mainPanel, message, title, JOptionPane.OK_OPTION, JOptionPane.INFORMATION_MESSAGE, icon, options, options[0]);
 				
-				frame.dispose();
+				
 			}
 		});
 		
