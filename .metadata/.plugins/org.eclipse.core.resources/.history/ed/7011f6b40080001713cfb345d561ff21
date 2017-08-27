@@ -1,8 +1,0 @@
-package com.musala.lfm;
-
-public class CurrentAccount extends Account {
-	
-	public CurrentAccount() {
-		// TODO Auto-generated constructor stub
-	}
-}

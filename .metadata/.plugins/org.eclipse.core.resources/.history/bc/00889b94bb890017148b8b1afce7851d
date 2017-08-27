@@ -1,8 +1,0 @@
-package com.musala.lfm.collections;
-
-public class FilesAndExceptions {
-
-	public static void main(String args[]) {
-		
-	}
-}

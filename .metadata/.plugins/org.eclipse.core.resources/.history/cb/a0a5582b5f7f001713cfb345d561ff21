@@ -1,6 +1,0 @@
-package com.musala.lfm;
-
-public class CreditCardAccount extends Account {
-
-	private double limit;
-}
