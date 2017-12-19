@@ -1,0 +1,27 @@
+package com.musala.oop;
+
+public class BankAccount {
+
+	private String name;
+	private String iban;
+	private Customer owner;
+	private double balance;
+	
+	public BankAccount() {
+		name = "";
+		iban = "12345";
+		owner = null;
+		balance = 0;
+	}
+	
+	public BankAccount(String name, String iban, Customer owner) {
+		this.name = name;
+		this.iban = iban;
+		this.owner = owner;
+		this.balance = 0;
+	}
+	
+	public void deposit(double amount) {
+		
+	}
+}

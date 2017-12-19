@@ -1,7 +1,0 @@
-package com.musala.lfm;
-
-import java.util.Comparator;
-
-public class RectComparator implements Comparator<Rectangle> {
-	
-}

@@ -1,0 +1,13 @@
+package com.musala.oop;
+
+public class ObjectExamples {
+
+	public static void main(String[] args) {
+		
+		BankAccount mainAccount = new BankAccount();
+		
+		Customer me = new Customer();
+		
+		BankAccount secondaryAccount = new BankAccount("secondary", "1234", me);
+	}
+}

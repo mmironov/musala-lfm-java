@@ -1,7 +1,0 @@
-package com.musala.lfm;
-
-import javax.swing.JPanel;
-
-public class LfmPanel extends JPanel {
-
-}

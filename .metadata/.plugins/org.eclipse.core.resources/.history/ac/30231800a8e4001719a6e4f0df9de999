@@ -1,0 +1,9 @@
+package com.musala.oop;
+
+public class ObjectExamples {
+
+	public static void main(String[] args) {
+		
+		BankAccount mainAccount = new BankAccount();
+	}
+}

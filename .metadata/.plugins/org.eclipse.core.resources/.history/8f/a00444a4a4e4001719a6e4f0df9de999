@@ -1,0 +1,16 @@
+package com.musala.oop;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		//integer types
+		int i = 10;
+		long l = 1005l;
+		
+		//decimal types
+		double PI = 3.14159;
+		
+		System.out.println("A new program.");
+	}
+}

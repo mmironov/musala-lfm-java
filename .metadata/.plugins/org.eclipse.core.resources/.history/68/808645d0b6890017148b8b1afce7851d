@@ -1,9 +1,0 @@
-package com.musala.lfm.collections;
-
-public class SetExample {
-
-	public static void main(String[] args) {
-		
-		
-	}
-}

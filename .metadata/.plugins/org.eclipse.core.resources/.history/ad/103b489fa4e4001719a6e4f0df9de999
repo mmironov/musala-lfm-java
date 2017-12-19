@@ -1,0 +1,12 @@
+package com.musala.oop;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		int i = 10;
+		long l = 1005l;
+		
+		System.out.println("A new program.");
+	}
+}

@@ -1,0 +1,40 @@
+package com.musala.oop;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		//integer types
+		int i = 10; //32 bits
+		long l = 1005l; //64 bits
+		byte b = -15; // 8 bits
+		short s = 1005; // 16 bits
+		
+		//decimal types
+		double pi = 3.14159;
+		float e = 2.71f;
+		
+		//characters
+		char ch = 'a';
+		char x = '_';
+		
+		//strings
+		String str = "Hello World!";
+		
+		//boolean
+		boolean bool = true;
+		
+		int sum = i + 5000;
+		
+		System.out.println("A new program.");
+		
+		double first = 5;
+		int second = 3;
+		
+		double result = first / second;
+		System.out.println("Quotient: " + result);
+		
+		double remainder = first % second;
+		System.out.println("Remainder: " + remainder);
+	}
+}

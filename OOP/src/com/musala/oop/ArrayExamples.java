@@ -1,0 +1,26 @@
+package com.musala.oop;
+
+public class ArrayExamples {
+
+	public static void main(String[] args) {
+		
+		int[] numbers = {1,2,3,4,5};
+		
+		System.out.println("Numbers length: " + numbers.length);
+		
+		int size = 15;
+		
+		int[] array = new int[size];
+		System.out.println("Array length: " + array.length);
+		
+		for(int i=0; i < numbers.length; ++i) {
+			System.out.println(numbers[i]);
+		}
+		
+		int k=0;
+		while (k < array.length) {
+			System.out.println(array[k]);
+			++k;
+		}
+	}
+}

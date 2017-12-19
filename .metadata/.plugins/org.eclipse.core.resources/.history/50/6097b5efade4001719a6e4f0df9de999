@@ -1,0 +1,25 @@
+package com.musala.oop;
+
+public class ObjectExamples {
+
+	public static void main(String[] args) {
+		
+		BankAccount mainAccount = new BankAccount();
+		mainAccount.deposit(1000);
+		mainAccount.deposit(500);
+		mainAccount.withdraw(150);
+		
+		System.out.println("Balance: " + mainAccount.getBalance());
+		
+		Customer me = new Customer();
+		
+		BankAccount secondaryAccount = new BankAccount("secondary", "1234", me);
+		
+		mainAccount.setOwner(me);
+		
+		
+		System.out.println();
+		
+		me.printAccounts();
+	}
+}

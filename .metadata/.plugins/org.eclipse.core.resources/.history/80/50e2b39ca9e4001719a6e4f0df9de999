@@ -1,0 +1,13 @@
+package com.musala.oop;
+
+import java.util.ArrayList;
+
+public class Customer {
+	
+	private String name;
+	private ArrayList<BankAccount> accounts;
+	
+	public Customer() {
+		accounts = new ArrayList<>();
+	}
+}

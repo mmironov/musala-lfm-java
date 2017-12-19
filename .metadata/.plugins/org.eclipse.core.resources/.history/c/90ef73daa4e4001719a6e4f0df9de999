@@ -1,0 +1,19 @@
+package com.musala.oop;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		//integer types
+		int i = 10; //32 bits
+		long l = 1005l; //64 bits
+		byte b = 15; // 8 bits
+		short s = 1005; // 16 bits
+		
+		//decimal types
+		double pi = 3.14159;
+		float e = 2.71f;
+		
+		System.out.println("A new program.");
+	}
+}

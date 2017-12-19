@@ -1,0 +1,9 @@
+package com.musala.oop;
+
+public class Program {
+
+	public static void mainn(String[] args) {
+		
+		System.out.println("A new program.");
+	}
+}

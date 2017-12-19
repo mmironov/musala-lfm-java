@@ -1,0 +1,16 @@
+package com.musala.oop;
+
+public class ArrayExamples {
+
+	public static void main(String[] args) {
+		
+		int[] numbers = {1,2,3,4,5};
+		
+		System.out.println("Numbers length: " + numbers.length);
+		
+		long size = 15;
+		
+		int[] array = new int[size];
+		System.out.println("Array length: " + array.length);
+	}
+}

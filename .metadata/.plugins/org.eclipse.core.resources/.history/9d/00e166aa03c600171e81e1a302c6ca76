@@ -1,0 +1,20 @@
+package com.musala.lfm;
+
+public class Number implements Listener, Watcher {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+interface Listener {
+	default void onClick() {
+		System.out.println("Listener");
+	}
+}
+
+interface Watcher {
+	default void onClick() {
+		System.out.println("Watcher");
+	}
+}

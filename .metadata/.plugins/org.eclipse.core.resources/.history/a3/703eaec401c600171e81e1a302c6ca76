@@ -1,0 +1,26 @@
+package com.musala.lfm;
+
+public class Number {
+
+	public static void main(String[] args) {
+		
+		int x = new Listener() {
+
+			int x;
+			int y;
+			
+			@Override
+			public void onClick() {
+				
+			}
+			
+			public int f() {
+				return 0;
+			}
+		}.f();
+	}
+}
+
+interface Listener {
+	void onClick();
+}

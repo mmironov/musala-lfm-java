@@ -1,0 +1,15 @@
+package com.musala.lfm;
+
+public class Number {
+
+	public static void main(String[] args) {
+		
+		Listener l = new Listener() {
+			
+		};
+	}
+}
+
+interface Listener {
+	void onClick();
+}

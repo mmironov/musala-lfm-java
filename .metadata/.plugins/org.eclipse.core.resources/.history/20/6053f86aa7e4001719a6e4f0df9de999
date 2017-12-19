@@ -1,0 +1,7 @@
+package com.musala.oop;
+
+public class BankAccount {
+
+	private String name;
+	private String iban;
+}

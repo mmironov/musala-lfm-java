@@ -1,9 +1,0 @@
-package com.musala.lfm;
-
-public class Rectangle {
-
-	public static class Point {
-		public int x;
-		public int y;
-	}
-}
