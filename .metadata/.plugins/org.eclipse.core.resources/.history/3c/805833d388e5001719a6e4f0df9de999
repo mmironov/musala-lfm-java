@@ -1,0 +1,8 @@
+package com.musala.oop;
+
+public class SavingsAccount extends BankAccount {
+
+	private double interestRate;
+	
+	
+}

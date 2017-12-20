@@ -1,0 +1,22 @@
+package com.musala.oop;
+
+import java.util.ArrayList;
+
+public class SavingsAccount extends BankAccount {
+
+	private double interestRate;
+	
+	public SavingsAccount(String name, String iban, ArrayList<Customer> owners,
+			double interestRate) {
+		super(name, iban, owners);
+		this.interestRate = interestRate;
+	}
+	
+	public double getInterestRate() {
+		return interestRate;
+	}
+	
+	public void payInterestNow() {
+		double interest = getBalance() * interestRate / 100;
+	}
+}

@@ -1,0 +1,69 @@
+package com.musala.oop;
+
+import java.util.ArrayList;
+
+public class BankAccount {
+	
+	private String name;
+	private String iban;
+	private double balance;
+	private ArrayList<Customer> owners;
+	
+	public BankAccount(String name, String iban, ArrayList<Customer> owners) {
+		this.name = name;
+		this.iban = iban;
+		this.owners = owners;
+		this.balance = 0;
+		
+		for(Customer owner : owners) {
+			owner.addAccount(this);
+		}			
+
+	}
+	
+
+	public ArrayList<Customer> getOwners() {
+		return customers;
+	}
+//
+//	public void setOwners(ArrayList<Customer> customers) {
+//		this.customers = customers;
+//	}
+
+	
+	public void deposit(double amount) {
+		
+		if (amount > 0) {
+			this.balance += amount; 
+		}
+	}
+	
+	public void withdraw(double amount) {
+		
+		if (amount > 0) {
+			this.balance -= amount;
+		}
+	}
+	
+	public double getBalance() {
+		return this.balance;
+	}
+	
+	public String getIban() {
+		return iban;
+	}
+	
+	public void setOwner(ArrayList<Customer> owner) {
+		
+		if (this.owners.get(0) != null ) {
+			this.owners = owner;
+			owner.get(0).addAccount(this);
+			owner.get(1).addAccount(this);
+			}		
+	}
+	
+	@Override
+	public String toString() {
+		return name + "(" + iban + ")";
+	}
+}

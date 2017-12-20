@@ -1,0 +1,18 @@
+package com.musala.oop;
+
+import java.util.ArrayList;
+
+public class InheritanceExamples {
+
+	public static void main(String[] args) {
+		
+		Customer c1 = new Customer();
+		Customer c2 = new Customer();
+		
+		ArrayList<Customer> owners = new ArrayList<>();
+		owners.add(c1);
+		owners.add(c2);
+		
+		SavingsAccount
+	}
+}

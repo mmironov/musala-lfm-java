@@ -1,0 +1,6 @@
+package com.musala.oop;
+
+public class CreditCardAccount extends BankAccount {
+
+	private double limit;
+}

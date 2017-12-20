@@ -1,0 +1,37 @@
+package com.musala.oop;
+
+import java.util.ArrayList;
+
+public class InheritanceExamples {
+
+	public static void main(String[] args) {
+		
+		Customer c1 = new Customer();
+		Customer c2 = new Customer();
+		
+		ArrayList<Customer> owners = new ArrayList<>();
+		owners.add(c1);
+		owners.add(c2);
+		
+		BankAccount sa = new SavingsAccount("Savings", "123", owners, 4);
+		
+		BankAccount[] accounts = new BankAccount[3];
+		accounts[0] = new CreditCardAccount("Credit", "12345", owners, 1000);
+		accounts[1] = new SavingsAccount("Savings10", "22222", owners, 3);
+		accounts[2] = new SavingsAccount("Savings60", "66666", owners, 10);
+		
+		sa.deposit(2000);
+		sa.withdraw(100);
+		sa.withdraw(10000);
+		
+		for(int i=0; i < accounts.length; ++i) {
+			accounts[i].deposit(6000);
+		}
+		
+		for(int i=0; i < accounts.length; ++i) {
+			accounts[i].withdraw(6500);
+		}
+		
+		System.out.println("Balance: " + sa.getBalance());
+	}
+}

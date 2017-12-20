@@ -1,0 +1,10 @@
+package com.musala.oop;
+
+public class CreditCardAccount extends BankAccount {
+
+	private double limit;
+	
+	public CreditCardAccount(String name, String iban, ArrayList<Customer> owners, double limit) {
+		
+	}
+}
