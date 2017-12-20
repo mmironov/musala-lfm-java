@@ -34,4 +34,14 @@ public class Customer {
 			System.out.println(account.toString());
 		}
 	}
+	
+	public double totalBalance() {
+		double balance = 0;
+		
+		for(BankAccount account : accounts) {
+			balance += account.getBalance();
+		}
+		
+		return balance;
+	}
 }

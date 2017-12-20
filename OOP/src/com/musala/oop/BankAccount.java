@@ -1,31 +1,53 @@
 package com.musala.oop;
 
-public class BankAccount {
+import java.util.ArrayList;
 
+public class BankAccount {
+	
 	private String name;
 	private String iban;
-	private Customer owner;
 	private double balance;
+	private ArrayList<Customer> owners;
 	
 	public BankAccount() {
-		iban = "12345";
-		name = iban;
-		balance = 0;
+		this.iban = "12345";
+		this.name = this.iban;
+		this.owners = new ArrayList<Customer>();
+		this.balance = 0;
 	}
 	
-	public BankAccount(String name, String iban, Customer owner) {
+	public BankAccount(String name, String iban, ArrayList<Customer> owners) {
 		this.name = name;
 		this.iban = iban;
-		this.owner = owner;
+		this.owners = owners;
 		this.balance = 0;
 		
-		owner.addAccount(this);
+		for(Customer owner : owners) {
+			owner.addAccount(this);
+		}			
+
+	}
+	
+
+	public ArrayList<Customer> getOwners() {
+		return owners;
+	}
+
+	public void addOwner(Customer owner) {
+		
+		if (!owners.contains(owner)) {
+			owners.add(owner);			
+		}
+	}
+	
+	public void setOwners(ArrayList<Customer> owners) {
+		this.owners = owners;
 	}
 	
 	public void deposit(double amount) {
 		
 		if (amount > 0) {
-			this.balance += amount; //this.balance = this.balance + amount;
+			this.balance += amount; 
 		}
 	}
 	
@@ -42,14 +64,6 @@ public class BankAccount {
 	
 	public String getIban() {
 		return iban;
-	}
-	
-	public void setOwner(Customer owner) {
-		
-		if (owner != null) {
-			this.owner = owner;
-			owner.addAccount(this);
-		}
 	}
 	
 	@Override
