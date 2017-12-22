@@ -1,0 +1,24 @@
+package com.musala.complexity;
+
+public class Program {
+
+	void algorithm(int n) {
+		int x = 10;
+		int y = x + 5;
+		
+		if (x > 0) {
+			
+		}
+		
+		for(int i=0; i < n; ++i) {
+			
+			for(int j=0; j < m; ++j) {
+				
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

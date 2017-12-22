@@ -1,6 +1,6 @@
 package com.musala.oop;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class SavingsAccount extends BankAccount {
 
@@ -8,7 +8,7 @@ public class SavingsAccount extends BankAccount {
 	
 	private boolean isInterestPaid;
 	
-	public SavingsAccount(String name, String iban, ArrayList<Customer> owners,
+	public SavingsAccount(String name, String iban, List<Customer> owners,
 			double interestRate) {
 		super(name, iban, owners);
 		this.interestRate = interestRate;

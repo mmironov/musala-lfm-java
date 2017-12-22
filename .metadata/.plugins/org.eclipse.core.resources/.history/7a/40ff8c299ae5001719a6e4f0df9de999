@@ -1,0 +1,7 @@
+package com.musala.list;
+
+public interface Map<K, V> {
+	
+	List<K> keyset();
+	List<V> valueset();
+}

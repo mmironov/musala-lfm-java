@@ -1,0 +1,17 @@
+package com.musala.oop;
+
+public class WebPage {
+
+	private Player player;
+	
+	public void onLoad() {
+		
+		if (getUserAgent().equals("Android")) {
+			player = new NativePlayer();
+		}
+	}
+	
+	private String getUserAgent() {
+		return "Android";
+	}
+}

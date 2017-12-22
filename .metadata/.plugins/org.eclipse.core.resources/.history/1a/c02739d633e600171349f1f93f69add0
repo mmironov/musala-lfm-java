@@ -1,0 +1,5 @@
+package com.musala.oop;
+
+public class WebPlayer implements Player {
+
+}

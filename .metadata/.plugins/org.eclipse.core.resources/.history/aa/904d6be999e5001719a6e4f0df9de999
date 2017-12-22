@@ -1,0 +1,5 @@
+package com.musala.list;
+
+public interface List {
+
+}

@@ -1,0 +1,12 @@
+package com.musala.oop;
+
+public abstract class AbstractButton {
+	
+	private String title;
+	
+	public Stirng getTitle() {
+		return title;
+	}
+	
+	
+}

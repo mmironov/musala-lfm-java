@@ -1,0 +1,4 @@
+package com.musala.list;
+
+public interface Map<K, V> {
+}

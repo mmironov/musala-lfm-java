@@ -1,7 +1,6 @@
 package com.musala.oop;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.Arrays;
 
 public class InheritanceExamples {
 
@@ -9,15 +8,11 @@ public class InheritanceExamples {
 		
 		Customer c1 = new Customer();
 		Customer c2 = new Customer();
-		
-		ArrayList<Customer> owners = new ArrayList<>();
-		owners.add(c1);
-		owners.add(c2);
 				
 		BankAccount[] accounts = new BankAccount[3];
-		accounts[0] = new CreditCardAccount("Credit", "12345", owners, 1000);
-		accounts[1] = new SavingsAccount("Savings10", "22222", owners, 3);
-		accounts[2] = new SavingsAccount("Savings60", "66666", owners, 10);
+		accounts[0] = new CreditCardAccount("Credit", "12345", Arrays.asList(c1, c2), 1000);
+		accounts[1] = new SavingsAccount("Savings10", "22222", Arrays.asList(c1), 3);
+		accounts[2] = new SavingsAccount("Savings60", "66666", Arrays.asList(c2), 10);
 		
 //		Random rand = new Random();
 //		int randomNumber = rand.nextInt(2);

@@ -1,0 +1,10 @@
+package com.musala.oop;
+
+public class WebPage {
+
+	private Player player;
+	
+	public void onLoad() {
+		
+	}
+}

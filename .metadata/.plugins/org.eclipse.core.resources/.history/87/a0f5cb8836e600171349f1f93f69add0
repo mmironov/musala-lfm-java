@@ -1,0 +1,10 @@
+package com.musala.oop;
+
+public class DektopPlayer extends SimplePlayer {
+
+	@Override
+	public String sourceUrl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

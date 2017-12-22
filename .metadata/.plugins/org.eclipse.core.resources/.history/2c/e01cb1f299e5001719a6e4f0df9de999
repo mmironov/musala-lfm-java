@@ -1,0 +1,7 @@
+package com.musala.list;
+
+public interface List<T> {
+
+	int size();
+	void add(T element);
+}

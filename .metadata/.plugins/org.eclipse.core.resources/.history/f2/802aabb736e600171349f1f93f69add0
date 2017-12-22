@@ -1,0 +1,15 @@
+package com.musala.oop;
+
+public class DektopPlayer extends SimplePlayer {
+
+	@Override
+	public String sourceUrl() {
+		return "file://sourceToVideo";
+	}
+	
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		super.start();
+	}
+}

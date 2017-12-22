@@ -1,0 +1,37 @@
+package com.musala.oop;
+
+public class WebPlayer implements Player {
+	
+	@Override
+	public String sourceUrl() {
+		return "https://video.com/video1";
+	}
+
+	public int start() {
+		return 5;
+	}
+
+	@Override
+	public void resume() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void pause() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void jumpTo(int second) {
+		// TODO Auto-generated method stub
+		
+	}
+}

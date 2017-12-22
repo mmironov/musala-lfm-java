@@ -1,0 +1,64 @@
+package com.musala.map;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+import com.musala.list.List;
+
+public class HashMap<K, V> implements Map<K, V> {
+
+	private static final int SIZE = 1024;
+	
+	private ArrayList<LinkedList<Pair<K, V>>> table;
+	private int size;
+	
+	public HashMap() {
+		table = new ArrayList<>(SIZE);
+		size = 0;
+	}
+	
+	@Override
+	public int size() {
+		return size;
+	}
+
+	@Override
+	public List<K> keyset() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<V> valueset() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public V get(K key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean contains(K key) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void insert(K key, V value) {
+		
+		int hash = key.hashCode();
+		int index = hash % SIZE;
+		
+		LinkedList<Pair<K, V>> values = table.get(index);
+		
+		
+	}
+	
+	public static class Pair<K, V> {
+		public K key;
+		public V value;
+	}
+}

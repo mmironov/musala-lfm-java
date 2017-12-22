@@ -1,0 +1,4 @@
+package com.musala.oop;
+
+public class DektopPlayer extends SimplePlayer {
+}

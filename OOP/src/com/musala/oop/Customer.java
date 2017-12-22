@@ -1,11 +1,12 @@
 package com.musala.oop;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Customer {
 	
 	private String name;
-	private ArrayList<BankAccount> accounts;
+	private List<BankAccount> accounts;
 	
 	public Customer() {
 		accounts = new ArrayList<>();

@@ -1,0 +1,12 @@
+package com.musala.complexity;
+
+public class Program {
+
+	void algorithm(int n) {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
